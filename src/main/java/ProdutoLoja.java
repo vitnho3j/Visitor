@@ -22,13 +22,12 @@ public class ProdutoLoja implements Produto{
         return preco;
     }
 
+    public void setPrecoTotal(float precoTotal) {
+        this.precoTotal = precoTotal;
+    }
 
     public String aceitar(Visitor visitor){
         return visitor.exibirValorLoja(this);
-    }
-
-    public void calcularValor(ProdutoLoja produtoLoja){
-        this.precoTotal = produtoLoja.getPreco();
     }
 
 

@@ -32,8 +32,9 @@ public class ProdutoTelefone implements Produto{
         return visitor.exibirValorTelefone(this);
     }
 
-    public void calcularValor(ProdutoTelefone produtoTelefone){
-        this.precoTotal = produtoTelefone.getPreco() + this.valorFrete;
+    public void setPrecoTotal(float precoTotal) {
+        this.precoTotal = precoTotal;
     }
+
 
 }

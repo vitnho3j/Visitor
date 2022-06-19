@@ -27,6 +27,10 @@ public class ProdutoSite implements Produto{
         return precoTotal;
     }
 
+    public void setPrecoTotal(float precoTotal) {
+        this.precoTotal = precoTotal;
+    }
+
     public float getPreco() {
         return preco;
     }
@@ -39,8 +43,5 @@ public class ProdutoSite implements Produto{
         return visitor.exibirValorInternet(this);
     }
 
-    public void calcularValor(ProdutoSite produtoSite){
-        this.precoTotal = produtoSite.getPreco() + valorFrete + acrescimo;
-    }
 
 }
